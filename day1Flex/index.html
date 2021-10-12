@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+		}
+		header{
+			background-color: #202020;
+			background-image:url("images/moon.jpg");
+			background-size:cover;
+			background-attachment:fixed;
+			background-position: center;
+			color:orange;
+			height:50vh;
+			/*this is a flexbox element*/
+			display: flex;
+			/*put this in the center of the container*/
+			align-items:center;
+			padding-left:20px;
+		}
+		
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;			
+		}
+		
+		.flex-container{
+			display: flex;
+		}
+		.flex-container h1{
+			font-family: 'Creepster', cursive;
+			color: #9A1416;
+		}
+		
+		.flex-container div{
+			background-color: antiquewhite;
+			margin:10px;
+			padding: 20px;
+		}
+		/*set the widths of the divs*/
+		
+		#item1{
+			flex:25%;
+			
+		}
+		
+		#item1 img{
+			width:100%;
+		}
+		
+		#item2{
+			flex:50%;
+		}
+		#item3{
+			flex:25%;
+		}
+		.btn{
+			background-color:#FF5F00;
+			border:none;
+			padding:15px 32px;
+			width:100%;
+		}
+		.btn:hover{
+			background-color:#FFA677;
+			color:#5E0001;
+		}
+		
+		#item4{
+			flex:50%;
+		}
+		#item5{
+			flex:50%;
+		}
+		#item6{
+			flex:25%;
+			background-color:transparent;
+		}
+		#item7{
+			flex:50%;
+			background-color:transparent;
+		}
+		#item8{
+			flex:25%;
+			background-color:transparent;
+		}
+		#item9{
+			flex:25%;
+		}
+		#item10{
+			flex:50%;
+		}
+		#item10 img{
+			width:100%;
+		}
+		
+		#item11{
+			flex:50%;
+		}
+		#item12{
+			flex:25%;
+		}
+		
+		footer{
+			background-color:#1F0202;
+			padding: 50px 0px;
+			color:#FF8600;
+			text-align:center;
+			font-weight: bold;
+		}
+		@media(max-width:800px){
+			.flex-container{
+				flex-direction:column;
+			}
+		}
+	
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		<h1>The Page Heading</h1>
+	</header>
+	
+	<div class="flex-container">
+		<div id="item1">1
+		<img src="images/person.jpg" alt="Creepy Person">
+		</div>
+		<div id="item2">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maiores distinctio provident laboriosam. Fugit corporis soluta, mollitia ab ratione sed eveniet. Temporibus non provident molestiae consequatur modi magni illum possimus, repellendus sapiente, quidem, voluptas maiores veniam dolor labore mollitia optio totam dolore architecto accusantium cumque ipsa, beatae qui. Esse totam repudiandae neque perspiciatis veritatis perferendis quo incidunt laboriosam libero quasi repellat nostrum quis accusamus, qui aspernatur facere eum nobis. Modi quis rerum nam minima eveniet. Itaque quos veritatis iusto ratione officia quam eius sed molestias temporibus. Maiores similique perferendis, rem at labore ipsum repudiandae officiis velit, nobis, unde possimus aliquam.
+			
+			</p>
+		
+		</div>
+		<div id="item3">
+			<p><button class="btn">Click Me!</button></p>
+			<p><button class="btn">Click Me Too!</button></p>
+		
+		</div>
+		
+	</div> 
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, repellat. Ipsam temporibus iste fuga non voluptatibus, quibusdam laboriosam! Doloremque nihil animi, dolorem magnam totam eos aut modi minima excepturi, repellendus placeat quas itaque voluptatem qui ipsam quae accusamus soluta quia nostrum inventore saepe rem. Architecto illo velit ipsum sit, quisquam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cum corporis debitis, rerum minima placeat ratione sunt et repellat provident?</p>
+		
+		</div>
+		<div id="item5">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt natus dicta quis nostrum temporibus distinctio optio molestiae voluptate tenetur aliquid quibusdam omnis libero facilis explicabo officia commodi ad suscipit repellat porro accusamus, obcaecati iure nam, excepturi. Libero laudantium, perspiciatis, modi quos dolor numquam nam, quasi dolore ea exercitationem id fugiat vitae. Accusamus commodi voluptatem cum doloribus iste ea fugit eligendi dignissimos sit voluptatibus totam sequi, reprehenderit delectus consequatur corporis? Mollitia.</p>
+		
+		</div>
+	</div>
+	
+	<div class="flex-container">
+		<div id="item9">
+		<img src="images/pexels-artūras-kokorevas-5749961.jpg" alt="Jack-O-Lantern">
+		<p>&copy; Photo by Artūras Kokorevas from Pexels</p>
+		</div>
+		<div id="item10">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quae aspernatur perspiciatis, ex omnis eius qui tempore nulla, cum molestiae asperiores suscipit nisi soluta natus sequi at voluptate in libero ducimus. Deleniti nulla, iste voluptate quia nam dolores consequuntur quos, ipsam praesentium blanditiis labore totam non cupiditate eius obcaecati iure. Beatae voluptates eaque repellat sunt aspernatur officiis aliquam vel repellendus doloremque ex obcaecati, ducimus provident consequuntur accusantium nemo labore dolorum quidem atque voluptatem recusandae voluptate. Doloribus, quae laborum, voluptas harum amet inventore officiis eveniet ut sapiente quis saepe ratione molestias iure, alias quidem totam delectus, ipsum nobis. Nihil similique fugit fuga nemo officia, laboriosam mollitia! Molestiae labore quam, deserunt iure distinctio minima ipsam quae velit unde, ab dicta vero explicabo dolore quos eligendi excepturi tenetur tempore consequuntur placeat impedit at nemo. Placeat impedit deserunt commodi quisquam explicabo, et pariatur nesciunt doloribus fuga ab tenetur excepturi, minus vitae perspiciatis beatae repellendus quae quis, consectetur ad. Repellendus officia eaque dolorum, possimus odit odio necessitatibus eius praesentium ullam voluptatum dolorem eos repellat velit, pariatur aut perspiciatis nesciunt fuga consequuntur ratione delectus voluptatibus accusamus! Iste, unde, voluptates. Iste facere, sequi accusamus, temporibus quo magnam quisquam. Deserunt aspernatur doloribus dolorem. Consequuntur animi, adipisci minima est.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quibusdam voluptate a officiis eius consectetur, nemo vel nobis, maiores, debitis sunt deserunt accusantium incidunt! Quaerat, odio adipisci labore molestiae dolore expedita nobis optio qui id dolorum fugit sit quia ipsa, voluptas consequatur? Suscipit mollitia placeat blanditiis in, rem, corporis ullam et nesciunt consequuntur assumenda reiciendis quos eum! Quis eos nemo a nostrum consequatur doloribus quam asperiores, voluptate ratione inventore facilis porro ullam ducimus fugit ab. Nemo excepturi dolorem, eius? </p>
+		</div>
+		<div id="item11">
+		<h1>Five Spooky Things</h1>
+			<ul>
+				<li>Werewolves</li>
+				<li>Vampires</li>
+				<li>Pumpkins</li>
+				<li>Zombies</li>
+				<li>Witches</li>
+			
+			</ul>
+		</div>
+		<div id="item12">
+			<p><button class="btn">Click for Spooky</button></p>
+			<p><button class="btn">Click for Spookier</button></p>
+		
+		</div>
+	
+	</div>
+	
+	<footer>
+		<div class="flex-container">
+		<div id="item6"></div>
+		<div id="item7">
+			<p>Created By Alyshia</p>
+			<p>&copy; 2021</p>
+			
+			</div>
+		<div id="item8"></div>
+	</div> 
+	
+	</footer>
+	
+</body>
+</html>
