@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Scripting 2021</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<style>
+		/***************************BODY*********************************/
+		body{
+			margin:auto;
+			padding:50px, 70px;
+			background-image:url("images/giphy-space-force.gif");
+			background-size:100%;
+			background-repeat: repeat-y;
+			background-attachment: fixed;
+			height:100%;
+			width:100%;
+			align-items:center;
+			justify-content:center;
+			max-width=1080px;
+			
+			
+		}
+		/****************************HEADER*****************************/
+		header{
+			
+			display:flex;
+			border:none;
+			align-items:center;
+			justify-content:center;
+			background-image:url("images/header-image.png");
+			font-family: 'Knewave', cursive;
+			color: #FFB600;
+			background-color: #451156;
+			background-size:cover;
+			background-attachment:fixed;
+			background-position:center;
+			height:70vh;
+			font-size:100px;
+			margin:0;
+			
+		}
+	
+		/***********************FLEX CONTAINER*************************/
+	
+		.flex{
+			display:flex;
+		}
+		
+		.flex div{
+			background-color:#180423;
+			font-family:'M PLUS Rounded 1c', sans-serif;
+			color: #FFD369;
+			margin: 10px 30px 10px 30px;
+			padding: 5px 30px 5px 30px;
+			align-items:center;
+			font-size:24px;
+			
+		}
+		.flex a{
+			color:#FFC600;
+		}
+		.flex a:hover{
+			color: #00FFDB;
+		}
+		
+		.flex h2{
+			font-family: 'Bungee', cursive;
+		}
+		/***************************BUTTONS****************************/
+		.btn{
+			background-color:#165A7F;
+			border:none;
+			padding: 20px 100px;
+			color: #FFC64D;
+			font-family: 'M PLUS Rounded 1c', sans-serif;
+			margin:0;
+			justify-content: center;
+			align-items: center;
+			width:100%;
+			font-size:15px;
+		}
+		.btn:hover{
+			color: #26004B;
+			background-color: #9BF1FF;}
+		/*************************SECTIONS***************************/
+		#bar1{
+			flex:25%;
+			background-color:transparent;
+			
+		}
+		#bar2{
+			flex:25%;
+			background-color:transparent;
+		}
+		#bar3{
+			flex:25%;
+			background-color:transparent;
+		}
+		#bar4{
+			flex:25%;
+			background-color:transparent;
+		}
+		#bar5{
+			flex:50%;
+			background-color:transparent;
+			margin:0;
+			
+		}
+		#bar5 img{
+			width:100%;
+		}
+		#bar6{
+			flex:50%;
+		}
+		
+		#bar7{
+			flex:57%;
+			background-color:transparent;
+			margin:0;
+			
+		}
+		#bar7 img{
+			width:100%;
+		}
+		#bar8{
+			flex:50%;
+			
+		}
+		#bar9{
+			flex:50%;
+			
+		}
+		#bar10{
+			flex:0%;
+			background-color:transparent;
+			
+		}
+		/*************************FOOTER******************************/
+		footer{
+			
+			margin:0;
+			display:flex;
+			height:35vh;
+			background-color: #0B1C24;
+			font-family:'M PLUS Rounded 1c', sans-serif;
+			color:#9DD3FF;
+			font-size:25px;
+			text-align:center;
+		}
+		footer h3{
+			color:#007CFF;
+			font-family: 'Knewave', cursive;
+		}
+		footer a{
+			color: #00DBFF;
+		}
+		footer a:hover{
+			color: #FFDC84;
+		}
+		
+
+		#bar11{
+			flex:33%;
+		}
+		#bar12{
+			flex:33%;
+		}
+		#bar13{
+			flex:33%;
+			
+		}
+		#bar13 img{
+			width:75%;
+		}
+
+
+	@media(max-width:1000px){
+			.flex{
+				flex-direction:column;
+			}
+		}
+	
+	
+	</style>
+</head>
+
+<body>
+	<!-------------------------HEADER-------------------------->
+	<header>
+		<div>
+			<h1>SCRIPTING 2021</h1>
+		</div>
+	
+	</header>
+	<!-----------------------SECTION 1-------------------------->
+	
+	<section class="flex">
+		<div id="bar1">
+			<p><button class="btn">Home</button></p>
+		</div>
+		
+		<div id="bar2">
+			<p><button class="btn">Site Construction</button></p>
+			
+		</div>
+		
+		<div id="bar3">
+			<p><button class="btn">Basic Interaction</button></p>
+		
+		</div>
+		
+		<div id="bar4">
+			<p><button class="btn">Object Properties</button></p>
+		
+		</div>
+	
+	</section>
+	
+	<!-----------------------SECTION 2-------------------------->
+	<section class="flex">
+		<div id="bar5">
+			<img src="images/vectorGraphic.png" alt="a vector graphic image created by Alyshia">
+			
+		</div>
+		
+		<div id="bar6">
+			<h2>About Alyshia</h2>
+			<p>Alyshia Brown has worked to become a self-taught digital artist with a love for video games and storytelling. The love for multimedia started early, as her childhood was spent doodling comics throughout elementary school, often based on video games or on the work she was supposed to be handing in. This got her in trouble with a lot of teachers, but it didn’t dissuade her from what made her happy.</p>
+			<p>Alyshia was raised in Lethbridge, Alberta for most of her life and has spent most of that time dreaming of post-secondary education. Though she has struggled with education in the past, she hopes to overcome her shortcomings and earn a degree in multimedia, which has been her passion from the beginning.</p>
+			<p>The first time she got her hands on a digital art program changed her life, as she mostly draws her comics using a digital medium in the present. She has refined these drawings into an adept following on social media, her latest webcomic garnering two thousand followers. She has collaborated with friends around the world to help in her creative process and happily shares these experiences with them.</p>
+			<p>Alyshia wishes to learn how to animate, having a need for storytelling and drawing to be pushed to their next level. Her love of video games has also given her a slight interest in programming, and perhaps she will make her own game one day.</p>
+			
+		</div>
+	
+	</section>
+	
+	<!-----------------------SECTION 3-------------------------->
+	<section class="flex">
+		
+		
+		<div id="bar8">
+			<h2>Current Projects</h2>
+			<p>For the past year now, Alyshia has been working on her own personal web comic. It is known as <a href="https://triple-threat-toppats.tumblr.com/" target="_blank">Triple Threat Toppats</a> and it is currently being hosted on Tumblr with the help of two very close compainions, <a href="https://kit27x.tumblr.com/" target="_blank">Kit</a> and <a href="https://burning-clutch.tumblr.com/" target="_blank">Kimcat.</a></p>
+			<p>The story is based on <a href="https://store.steampowered.com/app/1089980/The_Henry_Stickmin_Collection/" target="_blank">The Henry Stickmin Collection by Innersloth</a> and tells the story of a world renowned jewel thief with supernatural powers.</p>
+			<p>Alyshia loves to write as much as she loves to draw, and has written a few short stories that are hosted on Archive of our Own. Other projects involve new and original characters like Sullivan, who is depicted above.</p>
+		
+		</div>
+		
+		<div id="bar9">
+			<h2>Achievements</h2>
+			<p><ul>
+			<li>Graduated High School with the top Social Studies mark in her class.</li>
+			<li>Has created a social media following with a webcomic.</li>
+			<li>Talked with people all over the world through shared interest.</li>
+			</ul></p>
+			
+			
+		
+		</div>
+		
+	<div id="bar7">
+			<img src="images/henry-stickmin.png" alt="a picture of Henry Stickmin as he appears in Triple Threat Toppats">
+		
+		</div>
+	</section>
+	<!-----------------------FOOTER-------------------------->
+	
+	<footer>
+		<div id="bar11">
+		<h3>Credits</h3>
+			<p>Background By <a href="https://giphy.com/gifs/space-stars-universe-3og0IV7MOCfnm85iRa" target="_blank">Giphy</a>
+			<p>&copy;Alyshia Brown, 2021</p>
+			
+			</p>
+		</div>
+	<div id="bar13">
+			<img src="images/FtM Base 3.png" alt="Fixing the Multiverse Title Page, based on TTT webcomic">
+	</div>
+		<div id="bar12">
+			<h3>Social Media</h3>
+			<p><a href="https://browa123.tumblr.com/" target="_blank">Tumblr</a></p>
+			<p><a href="https://www.instagram.com/browa123/" target="_blank">Instagram</a></p>
+			<p><a href="https://archiveofourown.org/users/Browa123/pseuds/Browa123" target="_blank">Archive of our Own</a></p>
+	</div>
+	
+		
+	
+	</footer>
+</body>
+</html>
