@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*************************************FONTS*************************************/
+/*Header Font*/
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+/*Body Font*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+/*************************************HEADER************************************/
+header{
+	display:flex;
+	background-image:url("images/viaduct.jpg");
+	border:none;
+	align-items:left;
+	justify-content:left;
+	color: #8FE7B1;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	height:40vh;
+	font-size:80px;
+	font-family: 'Henny Penny', cursive;
+	margin:auto;
+}
+
+/***********************************NAVIGATION**********************************/
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #C0F3CA;
+}
+
+
+nav li {
+  float: left;
+}
+
+nav li a:link {
+  display: block;
+  color: #1D7E70;
+  text-align: center;
+  padding: 25px 35px;
+  text-decoration: none;
+}
+
+nav li a:visited{
+	color:#021F04;
+	padding: 25px 35px;
+}
+
+nav li a:hover {
+	background-color: #1D5811;
+	padding: 25px 35px;
+}
+/**************************************BODY************************************/
+body{
+	margin:auto;
+	padding:50px, 70px;
+	background-size:100%;
+	background-attachment: fixed;
+	height:100%;
+	width:100%;
+	align-items:center;
+	justify-content:center;
+	max-width:4080px;
+	background-image: linear-gradient(to right bottom, #d8ffe6, #bdf4e7, #a7e7e9, #99d9eb, #96c9e9);
+}
+
+
+/************************************CONTENT***********************************/
+
+
+
+p{
+	font-family: 'Zen Antique', serif;
+	line-height: 60px;
+	padding: 50px,1px;
+}
+h2{
+	font-family: 'Zen Antique', serif;
+	font-size: 50px;
+	padding:0, 0, 50px, 0px;
+}
+
+.flex{
+	display:flex;
+	margin:auto;
+	align-items:center;
+	font-size:25px;
+	box-sizing: border-box;
+	
+	
+}
+
+#textbar{
+	flex:50%;
+	margin:5px,1px;
+	padding:100px;
+	background-color: #C4FCFF;
+}
+#image{
+	flex:50%;
+	margin:50px;
+	
+
+	
+}
+#image img{
+	width:100%;
+	background-color:#A7E2FF;
+}
+/*************************************TABLE************************************/
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td{
+	padding: 30px;
+}
+table a{
+	color: #0A4F1A;
+}
+table a:hover{
+	color: #27D950;
+}
+table a:visited{
+	color: #09254F;
+}
+
+/*************************************FOOTER***********************************/
+footer{
+	margin:0;
+	display:flex;
+	height:20vh;
+	background-color: #175C46;
+	color:#9DD3FF;
+	font-size:20px;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+	flex:100%;
+	flex-direction: column;
+}
+#copy{
+	margin:auto;
+}
+#index{
+	font-size: 15px;
+}
+#index a{
+	color: #60FF9F;
+}
+#index a:hover{
+	color: #0CD55C;
+}
+#index a:visited{
+	color: #001D3D;
+}
+
+/*************************************MEDIA***********************************/
+@media(max-width:1000px){
+			.flex{
+				flex-direction:column;
+			}
+		}
