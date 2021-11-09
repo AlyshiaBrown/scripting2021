@@ -14,7 +14,7 @@ header{
 	border:none;
 	align-items:left;
 	justify-content:left;
-	color: #8FE7B1;
+	color: #D3FFE8;
 	background-size:cover;
 	background-attachment:fixed;
 	background-position:center;
@@ -36,7 +36,7 @@ nav ul {
   margin: 0;
   padding: 10px;
   overflow: hidden;
-  background-color: #C0F3CA;
+  background-color: #BDFFD9;
 }
 
 
@@ -46,19 +46,20 @@ nav li {
 
 nav li a:link {
   display: block;
-  color: #1D7E70;
+  color: #000000;
   text-align: center;
   padding: 25px 35px;
   text-decoration: none;
 }
 
 nav li a:visited{
-	color:#021F04;
+	color:#467692;
 	padding: 25px 35px;
 }
 
 nav li a:hover {
 	background-color: #1D5811;
+	color: #C9FFE5;
 	padding: 25px 35px;
 }
 /**************************************BODY************************************/
@@ -72,7 +73,7 @@ body{
 	align-items:center;
 	justify-content:center;
 	max-width:4080px;
-	background-image: linear-gradient(to right bottom, #d8ffe6, #bdf4e7, #a7e7e9, #99d9eb, #96c9e9);
+	background-image: linear-gradient(to bottom, #a4ffc4, #9cfeca, #94fdd1, #8cfcd7, #86fbdd, #75f2e0, #65e9e3, #59e0e4, #46cde0, #40b9d9, #45a4cf, #4e90c0);
 }
 
 
@@ -163,7 +164,7 @@ footer{
 	color: #0CD55C;
 }
 #index a:visited{
-	color: #001D3D;
+	color: #133E6E;
 }
 
 /*************************************MEDIA***********************************/
