@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Functions</title>
+</head>
+
+<body>
+	
+	<h1 id="idiot">Calling a Function with a Button</h1>
+	
+	<p id="regret">Think again, haha I follow my own rules.</p>
+	
+	<div id="fool"><p id="haunted">Think I'm going to repeat everything you say?</p></div>
+	
+	<button onClick="changeContent();">Don't Click Me!</button>
+	
+	<button onClick="madeWorse();">Seriously Don't</button>
+	
+	
+	
+	
+	<script>
+	//write a function definition that changes the content of a paragraph
+		function changeContent(){
+			//everything between curly brackets runs when the function is called
+			console.log("I am going to make this computer look haunted");
+			//change the inner html of paragraph
+			document.getElementById('regret').innerHTML="YOU ARE FOREVER CURSED YOU ABSOLUTE FOOL"
+			
+			document.getElementById('idiot').innerHTML="HEY IDIOT"
+			
+			//put different types of content in the div
+			document.getElementById('fool').innerHTML="<h3>HAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHA</h3><p>BURN FOR A THOUSAND YEARS IMBECILE!</p><img src='https://cdn.pixabay.com/photo/2021/07/05/17/25/scary-6389656_1280.jpg' alt='foolish fool'>"
+		} //ends change content
+		
+		function madeWorse(){
+			console.log("Here we go >:)");
+			
+			//create a variable to make a pointer to the div and change the look
+			
+		var spookyScary=document.getElementById('fool');
+			
+			spookyScary.style.color="#FF0000";
+		}
+		
+	
+	</script>
+</body>
+</html>
