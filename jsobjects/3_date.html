@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>date</title>
+</head>
+
+<body>
+	
+	<h1>DATE</h1>
+	
+	<div id="output">
+	<p>Click the button to learn more about dates.</p>
+	</div>
+	<button id="btn1">Click Me!</button>
+	
+	
+	<script>
+	
+	document.getElementById('btn1').addEventListener('click',dateStuff);
+		
+	function dateStuff(){
+		console.log("But I'm aromantic, I don't do dates.")
+		
+		var date = new Date();
+		
+		output.innerHTML="What is the day?"+date.getDate();
+		
+		output.innerHTML+="<br>What is the year? "+date.getFullYear();
+		
+		output.innerHTML+="<br>What is the hour? "+date.getHours();
+		
+		output.innerHTML+="<br>What is the minutes? "+date.getMinutes();
+		
+		output.innerHTML+="<br>What is the seconds? "+date.getSeconds();
+		
+		//Months as a variable as the list starts at 0 by default
+		
+		var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+		
+		output.innerHTML+="<br>What is the month? "+months[date.getMonth()];
+	}
+	
+	</script>
+</body>
+</html>

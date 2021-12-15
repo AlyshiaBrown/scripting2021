@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Clock</title>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+	
+	<style>
+		
+		body{
+			margin:auto;
+			background-size:100%;
+			height:100%;
+			width:100%;
+			align-items:center;
+			justify-content:center;
+			max-width=1080px;
+		}
+		
+		header{
+			
+			font-family: 'Rakkas', cursive;
+			align-items:center;
+			justify-content:center;
+			height:20vh;
+			font-size:30px;
+			margin:0;
+		}
+	
+	.parent{
+			background-image:url(“images/feb.png”);
+			width:700px;
+			height:1000px;
+			margin:auto;
+		}
+		
+		#month{
+			font-family: 'Candal', sans-serif;
+			background-color: #E9FFFD;
+			height:200px;
+			width:500px;
+			position:relative;
+			left:100px;
+			top:100px;
+			font-size:40px;
+			color:#06082F;
+			
+		}
+		#hours{
+			font-family: 'Candal', sans-serif;
+			height:100px;
+			width:200px;
+			background-color: #83E2FF;
+			position:relative;
+			left:250px;
+			top:100px;
+			
+		}
+		
+		#minutes{
+			font-family: 'Candal', sans-serif;
+			height:100px;
+			width:200px;
+			background-color: #83E2FF;
+			position:relative;
+			left:250px;
+			top:50px;
+		}
+		#seconds{
+			font-family: 'Candal', sans-serif;
+			height:100px;
+			width:200px;
+			background-color: #83E2FF;
+			position:relative;
+			left:250px;
+			top:0px;
+		}
+		
+		
+		footer{
+			font-family: 'Rakkas', cursive;
+			align-items:center;
+			justify-content:center;
+			height:10vh;
+			font-size:20px;
+			margin:0;
+			
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+	<header>
+	<h1>The Digital Clock</h1>
+	</header>
+		
+		<!--<img src="images/jan.png" alt="january">-->
+		
+		<div id="parent">
+			<div id="clock">
+		
+			<div id="month" class="child"> </div>
+			<div id="hours" class="child"> </div>
+			<div id="minutes" class="child"> </div>
+			<div id="seconds" class="child"> </div>
+	
+	
+		
+		
+		</div>
+	</div>
+	
+	<footer>
+		<p>&copy;Alyshia Brown</p>
+	</footer>
+	
+	<script>
+		
+		
+		function timer(){
+			console.log('start the clock');
+			
+			var date = new Date();
+			
+			var mon = date.getMonth();
+		
+			var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+			
+			var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+			
+			
+			document.getElementById('month').innerHTML="Today is "+days[date.getDay()]+", "+months[date.getMonth()]+" "+date.getDate()+", "+date.getFullYear();
+			document.getElementById('hours').innerHTML=date.getHours()+" ";
+			document.getElementById('minutes').innerHTML=date.getMinutes()+" ";
+			document.getElementById('seconds').innerHTML=date.getSeconds()+" ";
+			
+			if(mon==0){
+			  document.getElementById('parent').style.backgroundImage ="<img src='images/jan.png' alt='January'>";
+			   
+			   }
+			else if(mon==1){
+				document.getElementById('parent').style.backgroundImage ="<img src='images/feb.png' alt='February'>";
+				
+			}
+			
+			else if(mon==2){
+				document.getElementById('parent').style.backgroundImage="<img src='images/mar.png' alt='March'>";
+				
+			}
+			
+			else if(mon==3){
+				document.getElementById('parent').style.backgroundImage="<img src='images/apr.png' alt='April'>";
+				
+			}
+			
+			else if(mon==4){
+				document.getElementById('parent').style.backgroundImage="<img src='images/may.png' alt='May'>";
+				
+			}
+			
+			else if(mon==5){
+				document.getElementById('parent').style.backgroundImage="<img src='images/jun.png' alt='June'>";
+				
+			}
+			
+			else if(mon==6){
+				document.getElementById('parent').style.backgroundImage="<img src='images/jul.png' alt='July'>";
+				
+			}
+			
+			else if(mon==7){
+				document.getElementById('parent').style.backgroundImage="<img src='images/aug.png' alt='August'>";
+				
+			}
+			
+			else if(mon==8){
+				document.getElementById('parent').style.backgroundImage="<img src='images/sep.png' alt='September'>";
+				
+			}
+			
+			else if(month==9){
+				document.getElementById('parent').style.backgroundImage="<img src='images/oct.png' alt='October'>";
+				
+			}
+			
+			
+			else if(mon==10){
+				document.getElementById('parent').style.backgroundImage="<img src='images/nov.png' alt='November'>";
+				
+			}
+			
+			else if(mon==11){
+				document.getElementById('parent').style.backgroundImage="<img src='images/dec.png' alt='December'>";
+				
+			}
+			
+		}
+		timer();
+		var myInt=setInterval(timer,1000);
+	</script>
+</body>
+</html>

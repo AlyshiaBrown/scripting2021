@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Numbers</title>
+</head>
+
+<body>
+	<h1>NUMBERS</h1>
+	
+	<div id="output">
+	<p>Click the button to learn more about numbers.</p>
+	</div>
+	<button id="btn1">Click Me!</button>
+	
+	<script>
+	
+	//add event listener, listens for the button click and calls function
+	//which event bt1 is listening for, what function does it call
+	document.getElementById('btn1').addEventListener('click',mathStuff);
+		
+	function mathStuff(){
+		console.log("okay");
+		
+		//pointer to the div
+		var output = document.getElementById('output');
+		
+		//pre built method to find pi
+		
+		output.innerHTML="Pi is: "+Math.PI;
+		
+		//square root
+		output.innerHTML+="<br>The Square Root of 16 is: "+Math.sqrt(16);
+		
+		//round up a number
+		output.innerHTML+="<br>Rounding up 4.53 results in: "+Math.ceil(4.53);
+		
+		//round down a number
+		output.innerHTML+="<br>Rounding down 6.84 results in: "+Math.floor(6.84);
+		
+		//RNG
+		output.innerHTML+="<br>Here's a random number between 0 and 1, pray for your soul: "+Math.random();
+		
+		output.innerHTML+="<br>Here's a random number between 10 and 1, pray for your soul: "+Math.ceil(Math.random()*10);
+		
+		output.innerHTML+="<br>Here's a random number between 100 and 1, pray for your soul: "+Math.ceil(Math.random()*100);
+		
+	}
+	
+	</script>
+</body>
+</html>

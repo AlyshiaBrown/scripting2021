@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DYNAMIC</title>
+	
+	<style>
+		
+		#box1{
+			width:200px;
+			height:200px;
+			background-color: #FF4444;
+			position:relative;
+			margin-bottom: 30px;
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div id="box1"></div>
+	
+	<button id="move">Push It!</button>
+	<button id="stopit">HOLY CRAP STOP</button>
+	
+	<script>
+	
+	    //pointer
+		var box1 = document.getElementById('box1');
+		
+		//hold position
+		var pixel = 0;
+		
+		//event listener
+		document.getElementById('move').addEventListener('click',mover);
+		
+		//stop event listener
+		document.getElementById('stopit').addEventListener('click',stop);
+		
+		var moveIt
+		
+		function mover(){
+			console.log('move it b-');
+			
+			//set interval to move the box
+			
+			moveIt = setInterval(animate,50);
+			
+		}
+		function animate(){
+			console.log('I said move it gawddamit');
+			
+			//add to position variable, move div to that place
+			pixel+=5;
+			
+			box1.style.left=pixel+"px";
+			box1.style.backgroundColor="green";
+		}
+		
+		function stop(){
+			
+			clearInterval(moveIt);
+			
+			box1.style.backgroundColor="FF4444";
+			
+			
+		}
+		
+	
+	</script>
+</body>
+</html>

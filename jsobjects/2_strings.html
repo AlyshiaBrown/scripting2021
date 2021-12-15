@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Strings</title>
+</head>
+
+<body>
+	<h1>Strings</h1>
+	
+	<div id="output">
+	<p>Click the button to learn more about strings.</p>
+	</div>
+	<button id="btn1">Click Me!</button>
+	
+	<script>
+	
+	document.getElementById('btn1').addEventListener('click',stringStuff);
+		
+	function stringStuff(){
+		console.log("roar");
+		
+		var output = document.getElementById('output');
+		
+		//creating a variable that holds a string
+		
+		var myWord = "Phantom";
+		
+		var mySentence = "The thief took the shiny object.";
+		
+		//check for a particular letter
+		output.innerHTML="Does my word start with a P? "+myWord.startsWith('P')
+		
+		output.innerHTML+="<br>Does my sentence start with The? "+mySentence.startsWith('The')
+		
+		output.innerHTML+="<br>Change myWord to lowercase. "+myWord.toLowerCase();
+		
+		output.innerHTML+="<br>Change myWord to uppercase. "+myWord.toUpperCase();
+		
+	}
+	
+	
+	</script>
+	
+</body>
+</html>

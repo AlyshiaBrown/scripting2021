@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Interval</title>
+</head>
+
+<body>
+	
+	<h1>TIMER</h1>
+	
+	<div id="output"></div>
+	
+	<button id="stopbtn">Stop Timer</button>
+	
+	<script>
+	//var that holds number. Sets an initial value
+	var num = 0;
+		
+	var output = document.getElementById('output');
+		
+	function timer(){
+		
+		//add 1 to our variable
+		num++;
+		
+		//send it to the output
+		output.innerHTML=num;
+	}
+	
+	timer();
+		//lets us call functions at predetermined time
+		//paramiter, which function - how often
+		
+		var myInt=setInterval(timer,1000);
+		
+	function stopTimer(){
+		console.log('STOP!');
+		clearInterval(myInt);
+		
+	}
+		
+		//event listener
+	document.getElementById('stopbtn').addEventListener('click',stopTimer);
+	
+	</script>
+</body>
+</html>
